@@ -3783,19 +3783,31 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/js/test.js\");\n\nvar y = 56;\nconsole.log(\"I imported \".concat(_test__WEBPACK_IMPORTED_MODULE_0__[\"default\"], \" from another module called test.js variable y is \").concat(y, \" \"));\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_Search__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./models/Search */ \"./src/js/models/Search.js\");\n/* harmony import */ var _views_searchView__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/searchView */ \"./src/js/views/searchView.js\");\n\n\nconsole.log('string: ', _models_Search__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nconsole.log(\"using impoted function \".concat(Object(_views_searchView__WEBPACK_IMPORTED_MODULE_1__[\"add\"])(_views_searchView__WEBPACK_IMPORTED_MODULE_1__[\"ID\"], 2), \" and \").concat(Object(_views_searchView__WEBPACK_IMPORTED_MODULE_1__[\"multiply\"])(3, 5), \". \").concat(_models_Search__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
-/***/ "./src/js/test.js":
-/*!************************!*\
-  !*** ./src/js/test.js ***!
-  \************************/
+/***/ "./src/js/models/Search.js":
+/*!*********************************!*\
+  !*** ./src/js/models/Search.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconsole.log('Imported module');\n/* harmony default export */ __webpack_exports__[\"default\"] = (9950);\n\n//# sourceURL=webpack:///./src/js/test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"i am export string\");\n\n//# sourceURL=webpack:///./src/js/models/Search.js?");
+
+/***/ }),
+
+/***/ "./src/js/views/searchView.js":
+/*!************************************!*\
+  !*** ./src/js/views/searchView.js ***!
+  \************************************/
+/*! exports provided: add, multily, id */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"add\", function() { return add; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"multily\", function() { return multily; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"id\", function() { return id; });\nvar add = function add(a, b) {\n  return a + b;\n};\nvar multily = function multily(a, b) {\n  return a * b;\n};\nvar id = 23;\n\n//# sourceURL=webpack:///./src/js/views/searchView.js?");
 
 /***/ }),
 
